@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: pink;
+            height:50px;
+            border-radius:100px ;
+            width:500px ;
+            margin:20px;
+            padding:4px;
+            
+        }
+        nav{
+            margin-top:20px;
+        }
+        nav a{
+            color:rgb(197,13,13);
+            text-decoration: none;
+            border:3px solid black;
+            font-size:medium;
+            font-weight:bolder;
+            margin:20px;
+            border-radius:10px;
+            background-color:rgb(221, 147, 177);
+
+        }
+
+        .button1 {
+            background-color: blue;
+            color: pink;
+        border: 2px solid #952e2e;
+        border-radius: 10px;
+        }
+
+.button1:hover {
+  background-color: #e186d5;
+  color: white;
+}
+
+
+    </style>
+</head>
+<body style="background: radial-gradient(pink,rgb(192, 225, 255));">
+    <div>
+    <nav>
+        <a href="Wallpaper.Webp">Image1</a>
+        <a href="Wallpaper.Webp">Image2</a>
+        <a href="Wallpaper1.Webp">Image3</a>
+        <a href="Parul.jpg">Image4</a>
+    </nav>
+    </div>
+    <label for="file">dowloading progress</label>
+    <progress id="file" value="32" max="100">23%</progress>
+    <br><label for="name">Name:
+    </label>
+    <input type="text" name="q" id="name">
+    <form action="done.html" method="get">
+        <fieldset>
+            <legend>Form</legend>
+            <label for="name1">Name:</label>
+            <input type="text" name="abc" placeholder="Enter your Name"  id="name">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" email="email" placeholder="Enter your email">
+            <br>
+           
+            <label for="num">PhoneNumber:</label>
+            <input type="number" name="123" placeholder="Enter your number" id="num">
+            <br>
+            <br>
+            
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender">
+            <br>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender">
+            <br>
+            <br>
+            <p>Cources to enroll in:</p>
+            <label for="checkbox">Java</label>
+            <input type="checkbox" id="course" name="cources">
+            <label for="checkbox">C++</label>
+            <input type="checkbox" id="course" name="cources">
+
+            <label for="checkbox">Python</label>
+            <input type="checkbox" id="course" name="cources">
+            <br>
+            <br>
+            <button class="button1">Submit</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>
