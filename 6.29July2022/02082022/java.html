@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    N1<input type="text" name="n1" id="n1"><br>
+    N2 <input type="text" name="n2" id="n2"><br>
+    <button type="button" onclick="fnClick()">Click</button>
+    <p id="p1"></p>
+    <!-- <script>
+        function fnClick(){
+          var n1=document.getElementById("n1").value;
+          var n2=document.getElementById("n2").value;
+          if(!isNaN(n1) && !isNaN(n2)){
+            n1=Number(n1);
+            n2=Number(n2);
+            document.getElementById("p1").innerHTML=Boolean(n1>n2);
+          }
+          else{
+           
+            document.getElementById("p1").innerHTML="<p>Please <span style='color:red'>Enter </span> a valid number </p>";
+          }
+        }
+    </script> -->
+    <!-- N3 <input type="text" name="n3" id="n3"><br><br>
+    <p id="p4"></p>
+        <button type="button" onClick="FuncClick()">Check Even Or odd.</button>
+    <script>
+        
+        function FuncClick(){
+        var n3=document.getElementById("n3").value;
+            if(n3==0){
+                document.getElementById("p4").innerHTML="<p>The number is <span style='color:red'>Zero</span></p>";
+            }else if(n3%2==0){
+                document.getElementById("p4").innerHTML="<p>The number is <span style='color:red'>Even</span></p>";
+            }
+            else{
+                document.getElementById("p4").innerHTML="<p>The number is <span style='color:red'>Odd</span</p>";
+
+            }
+        } -->
+        <!-- N5 <input type="text" name="n5" id="n5">
+        <p id="p5"></p>
+        <button type="button" onclick="isPrime()">Check if it is prime or not.</button>
+        <script>
+            function isPrime(){
+            var n5=document.getElementById("n5").value;
+            var isFlag=false;
+                for(var i=2;i<n5;i++){
+                    if(n5%i==0){
+                       isFlag=true;
+                    }
+                }if(isFlag==true){
+                    document.getElementById("p5").innerHTML="<p>This Number is a <span style='color:red'>Not prime</span></p>"
+                }else{
+                    document.getElementById("p5").innerHTML="<p>This Number is a <span style='color:red'> prime</span></p>"
+                }
+             } -->
+
+             N6 <input type="text" name="n6" id="n6">
+             N7 <input type="text" name="n7" id="n7">
+             <p id="p6"></p>
+             <button type="button" onclick="John()">Number</button>
+             <script>
+                function John(){
+                    var n6=document.getElementById("n6").value;
+                    var n7=document.getElementById("n7").value;
+                    var e=n6/n7;
+                    var f=n6%n7;
+                    document.getElementById("p5").innerHTML=f;
+                    document.getElementById("p5").innerHTML=e;
+                }
+             </script>
+        </script>
+    </script>
+</body>
+</html>

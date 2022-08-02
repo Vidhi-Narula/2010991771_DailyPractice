@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+#div_1 {
+    background-color: pink;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+}
+#div_1 p{
+    padding-top: 20px;
+}
+#div_2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+}
+#div_2 p{
+    font-family: Arial;
+    font-size: 30px;
+    color: rgb(29, 29, 194);
+    font-weight:bold;
+}
+#div_3 {
+    padding-top: 60px;
+    background-color: rgb(101, 206, 101);
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 180px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+#div_A{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(197, 131, 197);
+    display: inline-block;
+ }
+#div_A p{
+    margin-top: 7px;
+    color:yellow ;
+}
+#div_B{
+    margin-left: 7px;
+    margin-right: 7px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: green;
+    display: inline-block;
+}
+#div_B p{
+    margin-top: 7px;
+}
+
+#div_Z{
+    background-color: white;
+    height:85%;
+    width:85%;
+    margin-left: 7px;
+    margin-top: 7px;
+}
+#div_Z p{
+   padding-top: 16px;
+}
+
+#div_C{
+    background-color: gainsboro;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+#div_C p{
+    padding-top: 35px;
+    max-lines: 2;
+    width: 50px;
+    padding-left: 23px;
+}
+
+
+.VerticleDivs{
+    width: 100w;
+    border: 5px solid blue;
+    background-color: white;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+}
+.VerticleDivs p{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 5px;
+}
+</style>
+<body>
+   <div id="div_1">
+        <p>This div has 20px on either side.</p>
+   </div>
+   <div id="div_2">
+        <p>This is my pretty webfont</p>
+   </div>
+   <div id="div_3">
+        <div id="div_A"><p>Element 1</p></div>
+        <div id="div_B"><div id="div_Z"><p>Element 2</p></div></div>
+        <div id="div_C"><p>Element 3</p></div>
+   </div>
+   <div>
+    <div class="divClass">
+    <div class="VerticleDivs"><p>1</p></div>
+    <div class="VerticleDivs"><p>2</p></div>
+    <div class="VerticleDivs"><p>3</p></div>
+   </div>
+
+</body>
+</html>
