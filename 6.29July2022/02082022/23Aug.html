@@ -1,0 +1,62 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="p1"></p>
+    <p id="err"></p>
+    <script>
+      let a = 0;
+      a += 1;
+      try {
+        alertt("Hi");
+      } catch (err) {
+        document.getElementById("err").innerHTML = err.message;
+      }
+
+      a += 1;
+      document.getElementById("p1").innerHTML = a;
+    </script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="n1" id="n1" placeholder="Enter a number" />
+    <button onclick="myFunction()"></button>
+    <p id="err"></p>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+                const message = document.getElementById("n1");
+                message.innerHTML = "";
+                let a = document.getElementById("demo").value;
+                try {
+
+                if (a == "") throw "is empty";
+                if (isNaN(a)) throw "is not a number";
+                a = Number(x);
+                if (a > 60) throw "is too high";
+                if (a < 18) throw "is too low";
+                }
+                catch (err) {
+                message.innerHTML = "Input " + err;
+                }
+                finally {
+                document.getElementById("demo").value = "";
+        }
+    }
+    </script>
+    
+</body>
+</html>

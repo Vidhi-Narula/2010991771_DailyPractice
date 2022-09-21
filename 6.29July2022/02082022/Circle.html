@@ -1,0 +1,84 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                background-color: pink;
+        }
+        .button1{
+            background-color:rgb(186, 22, 112);
+            display:inline-block;
+            position:relative;
+            left:620px;
+            height: 50px;
+            width:150px;
+        }
+        .button1:hover{
+            background-color: white;
+            border: 2px solid rgb(222, 24, 87);
+        }
+        
+        #Heading{
+            text-align: center;
+            color: red;
+        }
+        #n1{
+            position:relative;
+            left:500px;
+            width:350px;
+            height:20px;
+        }
+        #p{
+            position:relative;
+            left:620px; 
+        }
+        
+        </style>
+    </head>
+    <body>
+        <br >
+        <h1 id="Heading">Enter a number to generate a square</h1>
+        <input type="text" name="n1" id="n1" value="Enter 5 digit number">
+        <br>
+        <br>
+        <button class="button1" onclick="fnClick()">Genrate a square</button>
+        <br><br>
+        <div id="p" style="padding:50px" margin="10px"></div>  
+        
+        <script>
+            function fnClick(){
+            
+                let n=document.getElementById('n1').value;
+                n=Number(n);
+                var sum=0;
+                var count=0;
+                while(n>0){
+                    rem=n%10;1
+                    sum=sum+rem;
+                    n=Math.floor(n/10);
+                    count++;
+                }
+                if(count>5 || count<5){
+                    alert("Please enter only 5 numbers");
+                }
+                else{
+                    var radius=(Math.floor(sum/5));
+                }
+
+                document.getElementById('p').style.height=sum+"px";
+                document.getElementById('p').style.width=sum+"px";
+                document.getElementById('p').style.backgroundColor='hotpink';
+                document.getElementById('p').style.transition="all 4s";
+                document.getElementById('p').style.animation="my 4s";
+                document.getElementById('p').style.borderRadius=radius+"px";
+
+            }
+        </script>
+    </body>
+    </html>
+
+    

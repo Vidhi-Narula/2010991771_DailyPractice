@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="ST.css">
+    <script src="St.js"></script>
+    
+</head>
+<div>
+    <div id="div23">
+        <h1>Enter your weight here!!</h1>
+    </div>
+    <div id="div1">
+        <input type="number" name="input" id="input" size="5"\>
+       
+    </div>
+    <br>
+    <br>
+    <div id="div2">
+        <div class="planet">
+            <button id="button1" onclick="calc_weight('mercury')">MERCURY</button>
+            <br>
+            <p id="p1"></p>
+        </div>
+        <br>
+        <div class="planet">
+            <button id="button2" onclick="calc_weight('venus')">Venus</button>
+            <br>
+            <p id="p2"></p>
+        </div>
+    <br>
+
+        <div class="planet">
+            <button id="button3" onclick="calc_weight('moon')">Moon</button>
+            <br>
+            <p id="p3"></p>
+        </div>
+    <br>
+    </div>
+    <br>
+    <br>
+
+<div id="div6">
+        <div class="planet">
+            <button id="button4"  onclick="calc_weight('Mars')">Mars</button>
+            <br>
+            <p id="p4"></p>
+        </div>
+    <br>
+
+        <div class="planet">
+            <button id="button5"  onclick="calc_weight('jupiter')">jupiter</button>
+            <br>
+            <p id="p5"></p>
+        </div>
+    <br>
+
+        <div class="planet">
+            <button id="button6"  onclick="calc_weight('Saturn')">Saturn</button>
+            <br>
+            <p id="p6"></p>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div id="div7">
+        <br>
+        <div class="planet">
+            <button id="button7" onclick="calc_weight('uranus')">uranus</button>
+            <br>
+            <p id="p7"></p>
+        </div>
+        <br>
+        <div class="planet">
+            <button id="button8" onclick="calc_weight('Neptune')">Neptune</button>
+
+            <br>
+            <p id="p8"></p>
+        </div>
+        <br >
+        <div class="planet">
+            <button id="button9" onclick="calc_weight('Pluto')">Pluto</button>
+            <br>
+            <p id="p9"></p>
+        </div>
+
+    </div>
+    <!-- <script>
+        function calc_weight(planet_name){
+          var wgt=document.getElementById("input").value;
+          if(!isNaN(wgt)){
+            weig=Number(wgt);
+       
+        switch (planet_name)
+        {
+            case 'mercury':
+                gravity = 	0.38;
+                pid = "p1";
+                break;
+            case 'venus':
+                gravity=	0.91;
+                pid = "p2";
+                break;
+
+            case 'moon':
+                gravity=	0.166;
+                pid="p3";
+                break;
+            case 'Mars':
+                gravity=	0.38;
+                pid = "p4";
+                break;
+            case 'jupiter':
+                gravity=2.34;
+                pid = "p5";
+                break;
+            case 'Saturn':
+                gravity=	1.06;
+                pid = "p6";
+                break;
+                
+            case 'uranus':
+                gravity=	0.92;
+                pid = "p7";
+                break;
+            
+                
+             case 'Neptune':
+                gravity=	1.19;
+                pid = "p8";
+                break;
+            case 'Pluto':
+                gravity=	0.06;
+                pid = "p9";
+                break;
+            
+
+        }
+        wgt = wgt * gravity;
+        document.getElementById(pid).innerHTML=wgt;
+        }
+        
+        // else{
+        //    ToDo: add an alert here....!!!!
+            //    document.getElementById().innerHTML="<p>Please <span style='color:red'>Enter </span> a valid number </p>";
+            // }
+    }
+    </script> -->
+    
+</body>
+</html>

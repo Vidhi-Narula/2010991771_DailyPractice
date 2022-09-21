@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    L<input type="text" id="l"><br>
+    R<input type="text" id="r"><br>
+    K<input type="text" id="k"><br>
+    <p id="p1"></p>
+
+    <button type="button" onClick="myfnc()">Click</button>
+
+    <script>
+        function myfnc(){
+        var n1=document.getElementById("l").value;
+        var n2=document.getElementById("r").value;
+        var n3=document.getElementById("k").value;
+        var count=0;
+        for(var i=n1;i<=n2;i++){
+            if(i%n3==0){
+                count=count+1;
+            }
+        }
+        document.getElementById("p1").innerText=count;
+    }
+    </script>
+</body>
+</html>

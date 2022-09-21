@@ -1,0 +1,115 @@
+body{
+    /* background-image:url("image5.jpg"); */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    overflow-x:hidden;
+
+}
+
+p{
+    color: aqua;   
+}
+h1{
+    text-shadow: 2px 0 silver, -2px 0 silver, 0 2px silver, 0 -2px silver, 1px 1px silver, -1px -1px silver, -1px 1px silver, 1px -1px silver;
+    color:rgba(0, 32, 139, 0.786);
+    font-size: 60px;
+    text-align: center;
+}
+
+#div1{
+    padding-left: 600px;
+    border-width: 100px;
+}
+#button1{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-image: url("mercury.gif");
+}
+#button2{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-image: url("venus.gif");
+}
+
+#button3{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-image: url("moon.gif");
+}
+#button4{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background-image: url("mars.gif");
+}
+#button5{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-image: url("jupiter.gif");
+}
+#button6{
+    
+    width:100px;
+    height:100px;
+    background-image: url("saturn.gif");
+}
+#button7{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-image: url("uranus.gif");
+}
+#button8{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-image: url("neptune.gif");
+}
+#button9{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-image: url("pluto.gif");
+}
+
+input{
+    width:200px;
+    height:25px;
+    border-style: none;
+    background-color:lightgoldenrodyellow;
+}
+#div2{
+    padding-left: 100px;
+    padding-right:100px;
+    display:flex;
+    justify-content:space-around;
+    position:relative;
+    left: 15px;
+    
+}
+#div6{
+    padding-left: 100px;
+    padding-right:100px;
+    display:flex;
+    justify-content:space-around;
+    position:relative;
+    left: -25px;
+    
+}
+#div7{
+    padding-left: 100px;
+    padding-right:100px;
+    display:flex;
+    justify-content:space-around;
+    position:relative;
+    left: -155px;
+}
